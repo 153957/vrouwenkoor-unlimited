@@ -1,0 +1,320 @@
+body {
+	text-align: center;
+	font: 0.75em Verdana, Arial, Helvetica, sans-serif;
+	color: #222222;
+	margin: 0 10px;
+	padding: 0;
+	background: repeat url(images/body_bg.png);
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	color: #2d73b7;
+}
+
+a:hover, a:active, a:hover p.thumbnail-caption {
+	text-decoration: none;
+	border-bottom-width: 0px;
+	color: #2d73b7;
+}
+
+img {
+	border-style: none;
+}
+
+.image-left {
+	margin: 3px;
+	padding: 3px;
+	float: left;
+	position: relative;
+	z-index: 5;
+}
+
+.image-right {
+	margin: 3px;
+	padding: 3px;
+	float: right;
+	position: relative;
+	z-index: 5;
+}
+	
+img.line {
+	display: block; 
+}
+
+.clearer {
+	clear: both;
+}
+
+#top_grad {
+	position: absolute;
+	top: 0;
+	background: repeat-x url(images/body_top_grad.png);
+	height: 337px;
+	left: 0;
+	display: block;
+	width: 102%;
+	z-index: 0;
+}
+
+html > body #top_grad {
+	width: 100%;
+}
+
+#container {
+	background: #ffffff repeat-y left url(images/sidebar_left_bg.png);
+	position: relative;
+	top: 0;
+	padding-bottom: 10px;
+	z-index: 1;
+	width: 1000px;
+	margin: 0px auto 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: left; /* Hack To Keep IE5 Windows Happy */
+	border-right: 1px solid #23272d;
+	border-bottom: 1px solid #23272d;
+	border-left: 1px solid #23272d;
+}
+
+#pageHeader {
+	background: url(images/header_bg.png) repeat-x;
+	height: 100px;
+	text-align: center;
+	position: relative;
+}
+
+#pageHeader img {
+	position: absolute;
+	top: 10px;
+}
+
+#pageHeader h1 {
+	color: #F0F5F8;
+	font-size: 2.4em;
+	margin: 0 0 3px;
+	text-shadow: 2px 2px 3px #000000;
+	padding-top: 0px;
+	
+}
+
+#pageHeader h2 {
+	color: #F0F5F8;
+	text-shadow: 1px 1px 2px #000000;
+	font-size: 1.2em;
+	margin: 0;
+/*	padding-top: 48px; */
+}
+
+#contentContainer {
+	margin-left: 205px;
+	margin-right: 0px;
+	line-height: 1.6em;
+	position: relative;
+	z-index: 4;
+}
+
+#contentContainer #content {
+    width: 90%;
+	padding-left: 20px;
+	padding-right: 10px;
+	padding-top: 15px;
+	min-height: 400px;
+}
+
+#footer { 
+	width: 700px;
+	margin: 0px auto; /* Right And Left Margin Widths To Auto */
+	text-align: center; /* Hack To Keep IE5 Windows Happy */
+	color: #2B3636;
+	padding-top: 10px;
+	position: relative;
+}
+
+#footer p {
+	padding: 0;
+	margin: 0;
+}
+
+#footer a:link, #footer a:visited {
+	color: #2B3636;
+}
+
+#footer a:hover, #footer a:active {
+	color: #2B3636;
+	background: transparent;
+}
+
+#navcontainer {
+	float: left;
+	width: 200px;
+	z-index: 3;
+	border-top-color: #FF0000;
+	font-size: 1em;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+#navcontainer #current {
+	color: #ffffff;
+	background: #2E6FB1;
+}
+
+#navcontainer #current:hover {
+	background: #286694;
+	color: #ffffff;
+}
+
+#navcontainer .currentAncestor {
+	color: #ffffff;
+	background: #1b426a;
+}
+
+#navcontainer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#navcontainer li {
+	position: relative;
+}
+
+#navcontainer a{
+	display: block;
+	padding-left: 10px;
+	padding-top: 6px;
+	height: 20px;
+	background: #ffffff;
+	color: #1a4169;
+	text-decoration: none;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ececec;
+}
+
+#navcontainer a:hover {
+	background: #1861AA;
+	color: #ffffff;
+}
+
+#navcontainer ul ul a {
+	background: #fafafa;
+	padding-left: 30px;
+}
+
+#navcontainer ul ul #current{
+	background: #3c90ca;
+}
+
+#navcontainer ul ul .currentAncestor {
+	background: #3c90ca;
+}
+
+#navcontainer ul ul ul #current{
+	background: #fafafa;
+	color: #3c90ca;
+}
+
+#navcontainer ul ul ul a{
+	padding-left: 60px;
+}
+
+blockquote {
+	color: #4c4c4c;
+	font-style: italic;
+	font-size: 0.85em;
+	margin: 0;
+	padding: 5px;
+}
+
+h1 {
+	font-size: 1.6em;
+	margin: 0 0 3px;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin: 0 0 3px;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin: 0 0 3px;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 0 0 3px;
+}
+
+#sidebarContainer #sidebar ul {
+	margin: 10px;
+	padding: 0 10px;
+}
+
+table {
+	font-size: 1em;
+}
+
+.album-title {
+	color: #2d73b7;
+	font-size: 1.8em;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+.album-description {
+	margin-bottom: 20px;
+}
+
+.album-wrapper {
+	display: block;
+	width: 99%;
+	position: relative;
+}
+
+.thumbnail-wrap {
+	text-align: center;
+	position: relative;
+	float: left;
+	width: 240px;
+	height: 320px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.thumbnail-frame {
+	border: 1px solid #e6e6e6;
+	padding: 8px;
+	margin: 5px;
+	position: absolute;
+	width: 227px;
+}
+
+.thumbnail-frame:hover {
+	border: 1px solid #808080;
+}
+
+.thumbnail-frame a {
+	border-style: none;
+}
+
+.thumbnail-frame img {
+	margin: auto;
+    border: none;
+}
+
+.thumbnail-caption {
+    font-weight: bold;
+    height: 50px;
+	font-size: 0.8em;
+	color: #808080;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: block;
+}
+
+.required-text {
+	color: #ff0000;
+} 
