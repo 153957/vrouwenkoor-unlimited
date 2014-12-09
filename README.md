@@ -6,7 +6,8 @@ Vrouwenkoor UNLIMITED
 [![Travis Status](http://img.shields.io/travis/vrouwenkoor-unlimited/vrouwenkoor-unlimited/master.png)]
 (https://travis-ci.org/vrouwenkoor-unlimited/vrouwenkoor-unlimited)
 
-This is the website for the Vrouwenkoor UNLIMITED in Houten.
+This is the website for the
+[Vrouwenkoor UNLIMITED](http://www.vrouwenkoorunlimited.nl).
 
 
 Installing cactus
