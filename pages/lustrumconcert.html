@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Bestelformulier Lustrumconcert{% endblock %}
+
+{% block body %}
+    <h3>Lustrumconcert 25 Jaar</h3>
+
+    <p>
+        Zondagmiddag <b>3 november 2013</b> vierden we het 25 jarig
+        bestaan van ons koor. In de aula van <b>HOUTENS, Kruisboog 1 in
+        Houten</b>, werd het publiek verwelkomd met huisgemaakte lekkernijen
+        en zang. Folk & klezmer band, <a
+        href="https://www.facebook.com/zagerij.zeist">Zagerij Zeist</a> en
+        barbershop kwartet, Quatre Men verzorgden een muzikale bijdrage.
+    </p>
+
+    <p>Zie hier de poster (klik erop voor een vergroting):</p>
+    <a href="index_files/131103.jpg"><img src="{% static '/static/images_uitvoeringen/131103.jpg' %}" alt="poster" width="230" height="321" /></a>
+    <br>
+    <img src="{% static '/static/images/line_blue.png' %}" alt="" style="opacity: .3;" height="1" width="80%" />
+
+    <h3>Lustrumconcert 20 Jaar</h3>
+
+    <p>
+        In 2008 was op 29 november ons feestelijk lustrumconcert vanwege
+        het 20-jarig bestaan.<br>
+        Het werd een avond met veel muzikale afwisseling:
+    </p>
+
+    <ul>
+             <li>Liederen uit het repertoire van de afgelopen 20 jaar
+        </li><li>Zuid-Amerikaanse liederen
+        </li><li>Italiaanse liederen (o.a. van Mozart)
+        </li><li>Musicalliederen</li>
+    </ul>
+
+    <p>Foto's van deze avond kunt u bekijken op de site van de fotograaf:<br>
+    <a href="http://www.willemkox.nl/Fotografie/Theater/Unlimited/Lustrumconcert/index.html">www.willemkox.nl</a></p>
+    <img src="{% static '/static/images/line_blue.png' %}" alt="" height="1" width="80%" />
+
+{% endblock %}

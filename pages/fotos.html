@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : Foto's{% endblock %}
+
+{% block body %}
+    <h2>Foto's</h2>
+    <iframe name="target" src="http://arne.delaat.net/Photos_UNLIMITED/"
+            width="755" height="720" frameborder="0" scrolling="auto"
+            id="target">
+    </iframe>
+{% endblock %}

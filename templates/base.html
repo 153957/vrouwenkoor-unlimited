@@ -26,6 +26,7 @@
         <meta name="application-name" content="Vrouwenkoor UNLIMITED">
         <meta name="description" content="{% block meta_description %}{% endblock %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <link rel="stylesheet" href="{% static '/static/css/main.css' %}">
         <style>
             {% block style %}
@@ -36,6 +37,75 @@
     </head>
 
     <body>
+        <div id="top_grad"></div>
+        <div id="container">
+            <div id="pageHeader"></div>
+            <div id="navcontainer">
+                <ul>
+                    <li>
+                        <a class="{% if_current_page '/index.html' 'active' '' %}"
+                           href="{% url '/index.html' %}">Home</a></li>
+                    <li>
+                        <a class="{% if_current_page '/info.html' 'active' '' %}"
+                           href="{% url '/info.html' %}">Algemene informatie</a></li>
+                    <li>
+                        <a class="{% if_current_page '/lidmaatschap.html' 'active' '' %}"
+                           href="{% url '/lidmaatschap.html' %}">Lidmaatschap</a></li>
+                    <li>
+                        <a class="{% if_current_page '/practischezaken.html' 'active' '' %}"
+                           href="{% url '/practischezaken.html' %}">Praktische zaken</a></li>
+                    <li>
+                        <a class="{% if_current_page '/uitvoeringen.html' 'active' '' %}"
+                           href="{% url '/uitvoeringen.html' %}">Uitvoeringen</a></li>
+                    <ul>
+                        <li>
+                            <a class="{% if_current_page '/lustrumconcert.html' 'active' '' %}"
+                               href="{% url '/lustrumconcert.html' %}">Lustrumconcert</a></li>
+                        <li>
+                            <a class="{% if_current_page '/verleden.html' 'active' '' %}"
+                               href="{% url '/verleden.html' %}">Verleden</a></li>
+                    </ul>
+                    <li>
+                        <a class="{% if_current_page '/fotos.html' 'active' '' %}"
+                           href="{% url '/fotos.html' %}">Foto's</a></li>
+                    <li>
+                        <a class="{% if_current_page '/videos.html' 'active' '' %}"
+                           href="{% url '/videos.html' %}">Video's</a></li>
+                    <li>
+                        <a class="{% if_current_page '/repertoire.html' 'active' '' %}"
+                           href="{% url '/repertoire.html' %}">Repertoire</a></li>
+                </ul>
+            </div>
+            <div id="contentContainer">
+                <div id="content">
+                    {% block body %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="clearer"></div>
+        </div>
+        <div id="footer">
+            <p>© 2005-2015 <a href="#" id="email_contact">Emelie de Laat</a></p>
+        </div>
+        <script type="text/javascript">
+            {% block script %}
+            {% endblock %}
+            var bla0 = "mai",
+                bla1 = "lto",
+                bla2 = ":em",
+                bla3 = "eli",
+                bla4 = "e@d",
+                bla5 = "ela",
+                bla6 = "at.",
+                bla7 = "net",
+                bla = bla0 + bla1 + bla2 + bla3 + bla4 + bla5 + bla6 + bla7;
+            document.getElementById('email_contact').href = bla;
+            var sc_project = 6509888,
+                sc_invisible = 1,
+                sc_security="c683dd2b";
+        </script>
+        <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+
 
     </body>
 </html>

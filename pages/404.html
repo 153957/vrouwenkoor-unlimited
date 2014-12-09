@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ block.super }} : 404{% endblock %}
+
+{% block body %}
+    <div style="margin:25px 175px 0px 0px; text-align: center;">
+        <h2>404 - Pagina niet gevonden!</h2>
+
+        <p>
+            De gezochte pagina was niet gevonden.<br>
+            Zoek elders op de website voor de juiste pagina.
+        </p>
+        
+        <p>
+            Is er een kapotte link is op de website?<br>
+            Meldt dat dan bij de webmaster:<br>
+            <a href="#" id="email_contact1">Arne de Laat</a>
+        </p>
+    </div>
+{% endblock %}
+
+{% block script %}
+    var _bla0 = "mai",
+        _bla1 = "lto",
+        _bla2 = ":ar",
+        _bla3 = "n",
+        _bla4 = "e@d",
+        _bla5 = "ela",
+        _bla6 = "at.",
+        _bla7 = "net",
+        _bla = _bla0+_bla1+_bla2+_bla3+_bla4+_bla5+_bla6+_bla7;
+    document.getElementById('email_contact1').href = _bla;
+{% endblock %}
