@@ -5,7 +5,7 @@ python:
 sudo: false
 
 before_install:
-  - pip install https://github.com/koenbok/Cactus/archive/master.zip
+  - pip install cactus
   - wget https://raw.githubusercontent.com/mozilla/html5-lint/master/html5check.py
 
 script:
