@@ -1,6 +1,7 @@
 body {
 	text-align: center;
-	font: 0.75em Verdana, Arial, Helvetica, sans-serif;
+	font: 14px Verdana, Arial, Helvetica, sans-serif;
+	line-height: 22px;
 	color: #222222;
 	margin: 0 10px;
 	padding: 0;
@@ -39,9 +40,9 @@ img {
 	position: relative;
 	z-index: 5;
 }
-	
+
 img.line {
-	display: block; 
+	display: block;
 }
 
 .clearer {
@@ -91,17 +92,17 @@ html > body #top_grad {
 
 #pageHeader h1 {
 	color: #F0F5F8;
-	font-size: 2.4em;
+	font-size: 24px;
 	margin: 0 0 3px;
 	text-shadow: 2px 2px 3px #000000;
 	padding-top: 0px;
-	
+
 }
 
 #pageHeader h2 {
 	color: #F0F5F8;
 	text-shadow: 1px 1px 2px #000000;
-	font-size: 1.2em;
+	font-size: 12px;
 	margin: 0;
 /*	padding-top: 48px; */
 }
@@ -109,7 +110,6 @@ html > body #top_grad {
 #contentContainer {
 	margin-left: 205px;
 	margin-right: 0px;
-	line-height: 1.6em;
 	position: relative;
 	z-index: 4;
 }
@@ -122,7 +122,7 @@ html > body #top_grad {
 	min-height: 400px;
 }
 
-#footer { 
+#footer {
 	width: 700px;
 	margin: 0px auto; /* Right And Left Margin Widths To Auto */
 	text-align: center; /* Hack To Keep IE5 Windows Happy */
@@ -150,7 +150,8 @@ html > body #top_grad {
 	width: 200px;
 	z-index: 3;
 	border-top-color: #FF0000;
-	font-size: 1em;
+	font-size: 13px;
+	line-height: 17px;
 	margin-bottom: 10px;
 	position: relative;
 }
@@ -219,31 +220,23 @@ html > body #top_grad {
 	padding-left: 60px;
 }
 
-blockquote {
-	color: #4c4c4c;
-	font-style: italic;
-	font-size: 0.85em;
-	margin: 0;
-	padding: 5px;
-}
-
 h1 {
-	font-size: 1.6em;
+	font-size: 26px;
 	margin: 0 0 3px;
 }
 
 h2 {
-	font-size: 1.4em;
+	font-size: 22px;
 	margin: 0 0 3px;
 }
 
 h3 {
-	font-size: 1.2em;
+	font-size: 18px;
 	margin: 0 0 3px;
 }
 
 h4 {
-	font-size: 1em;
+	font-size: 16px;
 	margin: 0 0 3px;
 }
 
@@ -254,12 +247,15 @@ h4 {
 
 table {
     border: 0px;
-	font-size: 1em;
+}
+
+table, p {
+    margin: 1em 0 1.5em 0;
 }
 
 .album-title {
 	color: #2d73b7;
-	font-size: 1.8em;
+	font-size: 18px;
 	font-weight: normal;
 	margin-bottom: 5px;
 }
@@ -285,7 +281,7 @@ table {
 }
 
 .thumbnail-frame {
-	border: 1px solid #e6e6e6;
+	border: 1px solid transparent;
 	padding: 3px;
 	margin: 0px;
 	position: absolute;
@@ -306,10 +302,11 @@ table {
 }
 
 .thumbnail-caption {
-    font-weight: bold;
+    font-weight: 500;
     height: 50px;
-	font-size: 0.8em;
-	color: #808080;
+	font-size: 12px;
+	line-height: 1.4em;
+	color: #333;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -318,4 +315,4 @@ table {
 
 .required-text {
 	color: #ff0000;
-} 
+}
