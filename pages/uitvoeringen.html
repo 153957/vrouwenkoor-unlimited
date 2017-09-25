@@ -3,25 +3,275 @@
 {% block title %}{{ block.super }} : Uitvoeringen{% endblock %}
 
 {% block body %}
-   <h2>Geplande uitvoeringen</h2>
+    <h2>Uitvoeringen</h2>
 
     <div class="album-description">
-	    <p>Momenteel geen uitvoeringen gepland</p>
+        Dit is een overzicht van uitvoeringen uit het verleden.
     </div>
 
-<!-- 
     <div class="album-wrapper">
         <div class="thumbnail-wrap"><div class="thumbnail-frame">
-            <a href="[link naar meer info of poster]">
-                <img src="{% static '[pad naar poster of foto]' %}"
-                     alt="poster" width="150" height="210" />
+            <img src="{% static '/images_uitvoeringen/161217.jpg' %}"
+                 alt="poster" width="141" height="200" />
+            <p class="thumbnail-caption">
+                Kerstconcert i.s.m. The Red Flowers, in de Lichtboog Houten<br>
+                17 december 2016
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/160523.jpg' %}"
+                 alt="poster" width="225" height="150" />
+            <p class="thumbnail-caption">
+                Chansons d'un Reve, Het Witte Kerkje Odijk<br>
+                23 april 2016
+            </p>
+        </div></div>
+
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/150607.jpg' %}"
+                 alt="poster" width="140" height="200" />
+            <p class="thumbnail-caption">
+                Optreden met blokfluit ensemble En Bloc, De Wiese, Schalkwijk<br>
+                7 juni 2015
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/131214.jpg' %}"
+                 alt="poster" width="200" height="150" />
+            <p class="thumbnail-caption">
+                Kerst met Koren op Het Rond, Houten<br>
+                13 December 2014
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/141130.jpg' %}"
+                 alt="poster" width="225" height="150" />
+            <p class="thumbnail-caption">
+                Country and Christmas Fair<br>
+                30 November 2014<br>
+                Kasteel de Haar, Haarzuilens
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.weekvanhethospice.nl/woensdag-24-september-korenfestival">
+                <img src="{% static '/images_uitvoeringen/140924.jpg' %}"
+                     alt="poster" width="230" height="150" />
                 <p class="thumbnail-caption">
-                    [omschrijving/locatie]<br>
-                    [datum]
+                    Week van het Hospice<br>
+                    24 September 2014, 20.00 uur<br>
+                    Opstandingskerk, Het Kant 1, Houten
                 </p>
             </a>
-        </div>
+		</div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.cultuuraandeslinger.nl/projecten/4188/korenfestival-2014/">
+                <img src="{% static '/images_uitvoeringen/141108.jpg' %}"
+                     alt="poster" width="151" height="253" />
+                <p class="thumbnail-caption">
+                    Korenfestival<br>
+                    8 November 2014<br>
+                    Theater Aan de Slinger, Houten
+                </p>
+            </a>
+		</div></div>
+
+		<div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.makeblijde.nl">
+                <img src="{% static '/images_uitvoeringen/140629.jpg' %}"
+                     alt="poster" width="200" height="140" />
+                <p class="thumbnail-caption">
+                    Makeblijde nodigt uit, Houten<br>
+                    29 Juni 2014
+                </p>
+            </a>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.cultuuraandeslinger.nl/projecten/3928/kerst-met-koren/">
+                <img src="{% static '/images_uitvoeringen/131214.jpg' %}"
+                     alt="poster" width="200" height="150" />
+                <p class="thumbnail-caption">
+                    Kerst met Koren op Het Rond, Houten<br>
+                    14 December 2013
+                </p>
+            </a>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.vreeswijkbijkaarslicht.nl/?p=314">
+                <img src="{% static '/images_uitvoeringen/131218.jpg' %}"
+                     alt="poster" width="200" height="133" />
+                <p class="thumbnail-caption">
+                    Vreeswijk bij Kaarslicht, Nieuwegein<br>
+                    18 December 2013
+                </p>
+            </a>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="{% url '/lustrumconcert.html' %}">
+                <img src="{% static '/images_uitvoeringen/131103.jpg' %}"
+                     alt="poster" width="153" height="215" />
+                <p class="thumbnail-caption">
+                    25-jarig jubileum in Houten<br>
+                    3 November 2013
+                </p>
+            </a>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/120917.jpg' %}"
+                 alt="poster" width="181" height="256" />
+            <p class="thumbnail-caption">
+                De Bonaventurakerk in Woerden<br>
+                17 September 2012, 20.00
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/111226.jpg' %}"
+                 alt="poster" width="227" height="151" />
+            <p class="thumbnail-caption">
+                Huis Doorn<br>
+                26 December 2011
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/111217.jpg' %}"
+                 alt="poster" width="215" height="161" />
+            <p class="thumbnail-caption">
+                Op het Rond in Houten<br>
+                17 December 2011
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <a href="http://www.kunstaanbodhouten.nl/lopende-projecten/korenfestival.htm" target="_blank">
+                <img src="{% static '/images_uitvoeringen/111106.jpg' %}"
+                     alt="HoutenXL" width="151" height="253" />
+                <p class="thumbnail-caption">
+                    Korenfestival HoutenXL<br>
+                    6 November 2011
+                </p>
+            </a>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/110921.jpg' %}"
+                 alt="Hospice" width="230" height="150" />
+            <p class="thumbnail-caption">
+                Korenavond ten bate van het Hospice<br>
+                21 September 2011
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/101031.jpg' %}"
+                 alt="de Geer" width="228" height="193" />
+            <p class="thumbnail-caption">
+                'de Geer'<br>
+                31 Oktober 2010, 15.00<br>
+                Snoeksloot 48, Houten
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/091227.jpg' %}"
+                 alt="huis doorn.jpg" width="227" height="151" />
+            <p class="thumbnail-caption">
+                27 December 2009<br>
+                14.00/16.00 (bordes), 15.00 (binnen)<br>
+                Huis Doorn, Langbroekerweg 10, Doorn
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/091223.jpg' %}"
+                 alt="winkelcentrum Het Rond.jpg" width="151" height="227" />
+            <p class="thumbnail-caption">
+                23 December 2009<br>
+                20.00-21.00 thv de Bodyshop<br>
+                Het Rond, Houten
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/091216.jpg' %}"
+                 alt="Vreeswijk bij Kaarslicht 2.jpg" width="227" height="170" />
+            <p class="thumbnail-caption">
+                16 December 2009<br>
+                Vreeswijk bij Kaarslicht<br>
+                in Vreeswijk
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/081221.jpg' %}"
+                 alt="poster" width="160" height="227" />
+            <p class="thumbnail-caption">
+                21 December 2008<br>
+                Concert van Heart of Holland Chorus<br>
+                St. Bavokerk te Harmelen
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/081129.jpg' %}"
+                 alt="deslinger" width="227" height="145" />
+            <p class="thumbnail-caption">
+                Feestelijk jubileum concert<br>
+                29 November 2008, 20.15<br>
+                Theater Aan de Slinger, Houten
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/080504.jpg' %}"
+                 alt="onzelievevrouwe" width="227" height="170" />
+            <p class="thumbnail-caption">
+                Dodenherdenking<br>
+                4 Mei 2008, 19.00<br>
+                r.k. kerk Loerikseweg 10, Houten
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/080105.jpg' %}"
+                 alt="Spoorwegmuseum" width="203" height="227" />
+            <p class="thumbnail-caption">
+                Winter station<br>
+                5 januari 2008, 14.00 en 15.00<br>
+                Spoorwegmuseum, Utrecht
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/071012.jpg' %}"
+                 alt="St Michael-Kerk Schalkwijk 1" width="227" height="170" />
+            <p class="thumbnail-caption">
+                Vrienden van het Bätzorgel<br>
+                12 Oktober 2007, 20.00<br>
+                H. Michaelkerk, Schalkwijk
+            </p>
+        </div></div>
+
+        <div class="thumbnail-wrap"><div class="thumbnail-frame">
+            <img src="{% static '/images_uitvoeringen/070421.jpg' %}"
+                 alt="theresiaparochie" width="137" height="227" />
+            <p class="thumbnail-caption">
+                21 April 2007<br>
+                R.K. kerk St. Theresiaparochie<br>
+                Amersfoortseweg 48, Maarn
+            </p>
+        </div></div>
+
     </div>
- -->
 
 {% endblock %}
