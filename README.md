@@ -4,8 +4,7 @@ Vrouwenkoor UNLIMITED
 [![GPLv3](http://img.shields.io/badge/license-GPLv3-blue.png)](https://github.com/vrouwenkoor-unlimited/vrouwenkoor-unlimited/blob/master/LICENSE)
 [![Travis Status](http://img.shields.io/travis/vrouwenkoor-unlimited/vrouwenkoor-unlimited/master.png)](https://travis-ci.org/vrouwenkoor-unlimited/vrouwenkoor-unlimited)
 
-This is the website for the
-[Vrouwenkoor UNLIMITED](http://www.vrouwenkoorunlimited.nl).
+This is the website for the Vrouwenkoor UNLIMITED.
 
 
 Installing cactus
